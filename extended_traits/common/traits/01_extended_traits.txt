@@ -1,0 +1,203 @@
+############################
+#
+# Extended Traits
+# by r-M
+#
+############################
+
+trait_urban = {
+	cost = -2
+	opposites = { "trait_agrarian" }
+	modifier = {
+		tile_resource_food_mult = -0.2
+	}
+}
+
+trait_indulgent = {
+	cost = -1
+	opposites = { "trait_thrifty" }
+	modifier = {
+		tile_resource_energy_mult = -0.1
+	}
+}
+
+trait_content = {
+	cost = -2
+	opposites = { "trait_industrious" }
+	modifier = {
+		tile_resource_minerals_mult = -0.15
+	}
+}
+
+trait_dim = {
+	cost = -1
+	opposites = { "trait_intelligent" "trait_inept" }
+	modifier = {
+		tile_resource_engineering_research_mult = -0.05
+		tile_resource_physics_research_mult = -0.05
+		tile_resource_society_research_mult = -0.05
+	}
+}
+
+trait_inept = {
+	cost = -2
+	opposites = { "trait_intelligent" "trait_dim" }
+	modifier = {
+		tile_resource_engineering_research_mult = -0.1
+		tile_resource_physics_research_mult = -0.1
+		tile_resource_society_research_mult = -0.1
+	}
+}
+
+trait_incompetent_engineers = {
+	cost = -1
+	opposites = { "trait_natural_engineers" "trait_incompetent_physicists" "trait_incompetent_sociologists" }
+	
+	modifier = {
+		tile_resource_engineering_research_mult = -0.15
+	}
+}
+
+trait_incompetent_physicists = {
+	cost = -1
+	opposites = { "trait_incompetent_engineers" "trait_natural_physicists" "trait_incompetent_sociologists" }
+	
+	modifier = {
+		tile_resource_physics_research_mult = -0.15
+	}
+}
+
+trait_incompetent_sociologists = {
+	cost = -1
+	opposites = { "trait_incompetent_engineers" "trait_incompetent_physicists" "trait_natural_sociologists" }
+	
+	modifier = {
+		tile_resource_society_research_mult = -0.15
+	}
+}
+
+trait_very_weak = {
+	cost = -3
+	opposites = { "trait_strong" "trait_very_strong" "trait_weak" }
+	
+	modifier = {
+		army_damage_mult = -0.4
+		army_health = -0.25
+		tile_resource_minerals_mult = -0.15
+	}
+}
+
+trait_valiant = {
+	cost = 2
+	opposites = { "trait_craven" }
+	
+	modifier = {
+		army_morale = 0.2
+		army_damage_mult = 0.2
+	}
+}
+
+trait_craven = {
+	cost = -2
+	opposites = { "trait_valiant" }
+	
+	modifier = {
+		army_morale = -0.2
+		army_damage_mult = -0.2
+	}
+}
+
+trait_delicate = {
+	cost = -1
+	opposites = { "trait_resilient" }
+	
+	modifier = {
+		garrison_health = -0.5
+		pop_fortification_defense = -0.5
+	}
+}
+
+trait_conservationists = {
+	cost = -3
+	
+	modifier = {
+		planet_clear_blocker_cost_mult = 0.5
+		planet_clear_blocker_time_mult = 0.75
+		terraforming_cost_mult = 0.25
+		planet_colony_development_speed_mult = -0.1
+	}
+}
+
+trait_deliberators = {
+	cost = 2
+	opposites = { "trait_virtualists" }
+	
+	modifier = {
+		country_resource_influence_add = 1
+	}
+}
+
+trait_virtualists = {
+	cost = -2
+	opposites = { "trait_deliberators" }
+	
+	modifier = {
+		country_resource_influence_add = -1
+	}
+}
+
+trait_politically_adept = {
+	cost = 1
+	
+	modifier = {
+		max_rivalries = 1
+		diplomacy_influence_cost = -0.25
+		country_trust_growth = 0.25
+	}
+}
+
+trait_natural_architects = {
+	cost = 1
+	opposites = { "trait_incompetent_architects" }
+
+	modifier = {
+		building_time_mult = -0.1
+		planet_building_cost_mult = -0.1
+	}
+}
+
+trait_incompetent_architects = {
+	cost = -1
+	opposites = { "trait_natural_architects" }
+
+	modifier = {
+		building_time_mult = 0.1
+		planet_building_cost_mult = 0.1
+	}
+}
+
+
+# ############################## #
+# REMOVED TRAITS (COMPATABILITY) #
+# ############################## #
+trait_transient = {
+	cost = -1
+	initial = no
+	modification = no
+	modifier = { leader_age = -20 }
+	opposites = { "trait_venerable" "trait_enduring" "trait_fleeting" }
+}
+trait_individualistic = {
+	cost = -1
+	initial = no
+	modification = no
+	modifier = { pop_ethic_shift = 0.2 }
+	opposites = { "trait_conformists" "trait_deviants" }
+}
+trait_resourceful = {
+	cost = 1
+	initial = no
+	modification = no
+	opposites = { "trait_decadent" }
+	modifier = { pop_eff_wo_slaves = 0.05 }
+}
