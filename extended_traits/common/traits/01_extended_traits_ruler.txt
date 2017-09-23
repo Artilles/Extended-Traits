@@ -16,11 +16,8 @@ trait_ruler_veteran_politician = {
 	cost = 2
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_deliberators.dds"
-	potential = {
-		NOT = { from = { has_ethic = "ethic_hive_mind" } }
-	}
 	modifier = {
-		country_influence_gain_mult = 0.1
+		country_resource_influence_mult = 0.1
 	}
 	leader_trait = yes
 	leader_class = { ruler }
@@ -30,9 +27,6 @@ trait_ruler_scientific_mind = {
 	cost = 1
 	modification = no
 	icon = "gfx/interface/icons/traits/trait_intelligent.dds"
-	potential = {
-		NOT = { from = { has_ethic = "ethic_hive_mind" } }
-	}
 	modifier = {
 		all_technology_research_speed = 0.05
 	}
@@ -43,10 +37,7 @@ trait_ruler_scientific_mind = {
 trait_ruler_visionary = {
 	cost = 3
 	modification = no
-	icon = "gfx/interface/icons/leader_traits/trait_ruler_charismatic.dds"
-	potential = {
-		NOT = { from = { has_ethic = "ethic_hive_mind" } }
-	}
+	icon = "gfx/interface/icons/traits/leader_traits/trait_ruler_charismatic.dds"
 	modifier = {
 		planet_border_mult = 0.15
 	}
