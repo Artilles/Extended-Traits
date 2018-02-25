@@ -117,8 +117,8 @@ trait_delicate = {
 	opposites = { "trait_resilient" }
 	allowed_archetypes = { BIOLOGICAL ROBOT }
 	modifier = {
-		garrison_health = -0.5
-		pop_fortification_defense = -0.5
+		army_defense_health_mult = -0.3
+		army_defense_damage_mult = -0.3
 	}
 }
 
