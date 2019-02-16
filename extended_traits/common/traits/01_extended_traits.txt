@@ -192,8 +192,8 @@ trait_natural_architects = {
 	opposites = { "trait_incompetent_architects" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		building_time_mult = -0.1
-		planet_building_cost_mult = -0.1
+		planet_building_build_speed_mult = 0.1
+		planet_buildings_cost_mult = -0.1
 	}
 }
 
@@ -203,8 +203,8 @@ trait_incompetent_architects = {
 	opposites = { "trait_natural_architects" }
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
-		building_time_mult = 0.1
-		planet_building_cost_mult = 0.1
+		planet_building_build_speed_mult = -0.1
+		planet_buildings_cost_mult = 0.1
 	}
 }
 
