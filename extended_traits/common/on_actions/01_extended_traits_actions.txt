@@ -11,8 +11,8 @@ on_game_start = {
 	}
 }
 
-on_species_modified = {
-	events = {
-		extended_traits.1
-	}
-}
+# on_modification_complete = {
+#	events = {
+#		extended_traits.1
+#	}
+# }
